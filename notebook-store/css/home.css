@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: auto;
+    height: 13vh;
+
+    display: flex;
+    align-items: center;
+}
+
+#logo-img {
+    width: 5vw;
+    height: auto;
+    margin-left: 1%;
+}
+
+#logo-title {
+    margin-left: 1%;
+}
+
+nav {
+    display: flex;
+    gap: 22px; 
+    margin-left: 50%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.05em;
+}
+
+nav a:hover {
+    color: rgb(0, 106, 255);
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/notebooksBg.jpg);
+    background-size:30%;
+    background-repeat: repeat-x;
+    background-position: left 45vw top 12vh;
+}
+
+#hero-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+    width: 100%; 
+}
+
+#hero-logos {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    height: 10vh;
+    gap: 16%;
+    cursor: pointer; 
+}
+
+#hero h2 {
+    color: #2c3e50;
+    background: linear-gradient(120deg, #0e0972, #3498db, #540cda);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
+    margin-top: 3.5vh;
+    margin-right: 5%;
+}
+
+#hero-video {
+    margin-top: 3vh;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+#notebook-heading {
+    color: #2c3e50;
+    background: linear-gradient(120deg, #0e0972, #3498db, #540cda);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+    font-size: 2em;
+    margin-right: 5%;
+}
+
+#notebook-heading span {
+    -webkit-text-fill-color: black;
+}
+
+#notebooks-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 9vh;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.notebook-card {
+    display: flex;
+    flex-direction: column;
+    height: 4vh;
+    width: calc(11.33% - 20px);
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

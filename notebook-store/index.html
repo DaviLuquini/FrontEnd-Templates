@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Notebook Store">
+    <meta name="description" content="Cheap and trustable notebook store">
+    <meta name="author" content="Davi Luquini">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Notebook cheap Store">
+    <meta property="og:description" content="Notebook cheap and trustable Store">
+    <meta property="og:url" content="index.html">
+    <meta property="og:image" content="./assets/notebookStore.jpg">
+
+    <link rel="stylesheet" href="css/home.css">
+    <title>Notebook Store</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/notebookLogo.png" id="logo-img" alt="Notebook store logo">
+        <h1 id="logo-title">Notebook Store</h1>
+        <nav>
+            <a href="/home">Home</a>
+            <a href="/galaxy_books">Galaxy Books</a>
+            <a href="/macbooks">MacBooks</a>
+            <a href="/dell">Dell</a>
+            <a href="/asus">Asus</a>
+        </nav>        
+    </header>
+    <main>
+        <section id="hero">
+            <div id="hero-info">
+                <div id="hero-logos">
+                    <img src="./assets/logos/apple.png" alt="Apple logo" onclick="redirectTo('/macbooks')">
+                    <img src="./assets/logos/asus.png" alt="Asus logo" onclick="redirectTo('/asus')">
+                    <img src="./assets/logos/dell.png" alt="Dell logo" onclick="redirectTo('/dell')">
+                    <img src="./assets/logos/samsung.png" alt="Samsung logo" onclick="redirectTo('/galaxy_books')">
+                </div>                
+                <h2>The power within you</h2>
+            </div>
+            <video id="hero-video" width="640" height="360" controls>
+                <source src="./assets/notebookVideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <h1 id="notebook-heading"><span>Find the perfect notebook for you!</span> <br> Our Notebooks</h1>
+        <section id="notebooks-cards">
+            <article class="notebook-card">
+                <img class="img-card" src="./assets/notebooks/macbook.jpeg">
+                <div class="card-info">
+                    <h4>Macbook Air</h4>
+                    <p>Thin and powerful MacBook</p>
+                </div>
+                <div class="card-footer">
+                    <span class="price">$ 699</span>
+                    <button class="buy-button">Buy now</button>
+                </div>
+            </article>
+
+            <article class="notebook-card">
+                <img class="img-card" src="./assets/notebooks/macbook2.jpeg">
+                <div class="card-info">
+                    <h4>Macbook Pro</h4>
+                    <p>The power in your hands.</p>
+                </div>
+                <div class="card-footer">
+                    <span class="price">$ 899</span>
+                    <button class="buy-button">Buy now</button>
+                </div>
+            </article>
+
+            <article class="notebook-card">
+                <img class="img-card" src="./assets/notebooks/galaxybook2.jpeg">
+                <div class="card-info">
+                    <h4>Galaxy Book2</h4>
+                    <p>Powerful and versatile notebook for all your needs.</p>
+                </div>
+                <div class="card-footer">
+                    <span class="price">$ 399</span>
+                    <button class="buy-button">Buy now</button>
+                </div>
+            </article>
+
+            <article class="notebook-card">
+                <img class="img-card" src="./assets/notebooks/galaxybook4.jpeg">
+                <div class="card-info">
+                    <h4>Galaxy Book4</h4>
+                    <p>Experience the future of computing.</p>
+                </div>
+                <div class="card-footer">
+                    <span class="price">$ 749</span>
+                    <button class="buy-button">Buy now</button>
+                </div>
+            </article>
+
+            <article class="notebook-card">
+                <img class="img-card" src="./assets/notebooks/dellLatitude.jpeg">
+                <div class="card-info">
+                    <h4>Dell Latitude</h4>
+                    <p>Reliable performance for professionals.</p>
+                </div>
+                <div class="card-footer">
+                    <span class="price">$ 799</span>
+                    <button class="buy-button">Buy now</button>
+                </div>
+            </article>
+
+            <article class="notebook-card">
+                <img class="img-card" src="./assets/notebooks/dellGamer.jpeg">
+                <div class="card-info">
+                    <h4>Dell Orion</h4>
+                    <p>Unleash your creativity.</p>
+                </div>
+                <div class="card-footer">
+                    <span class="price">$ 849</span>
+                    <button class="buy-button">Buy now</button>
+                </div>
+            </article>
+
+            <article class="notebook-card">
+                <img class="img-card" src="./assets/notebooks/asusLaptop.jpeg">
+                <div class="card-info">
+                    <h4>Asus Laptop</h4>
+                    <p>Efficiency meets elegance.</p>
+                </div>
+                <div class="card-footer">
+                    <span class="price">$ 699</span>
+                    <button class="buy-button">Buy now</button>
+                </div>
+            </article>
+
+            <article class="notebook-card">
+                <img class="img-card" src="./assets/notebooks/asusTuf.jpeg">
+                <div class="card-info">
+                    <h4>Asus Tuf</h4>
+                    <p>Built for the toughest tasks.</p>
+                </div>
+                <div class="card-footer">
+                    <span class="price">$ 799</span>
+                    <button class="buy-button">Buy now</button>
+                </div>
+            </article>
+        </section>
+
+        <section id="ad-card">
+            <div>
+                <iframe src="./assets/lgG7.jpeg" width="189" weight="266" sandbox allow="payment 'none'; camera 'none'; microphone 'none' "></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="footer-info">
+            <p>Tel 22 33204 9983.</p>
+            <p>Brooklyn Avenue 3255 New York</p>
+            <p>© 2025 Notebook Store. All rights reserved.</p>
+        </div>
+        <div id="footer-logo">
+            <img src="./assets/notebookLogo.jpeg" alt="Notebook store logo">
+        </div>
+    </footer>
+    <script src="js/home.js"></script>
+</body>
+</html>
+
+<!-- Use iframe to embed the cart.html -->
