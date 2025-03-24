@@ -1,0 +1,169 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+header {
+    background-color: white;
+    height: 120px;
+    width: 100%;
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+}
+
+nav ul{
+    text-align: center;
+    list-style: none;
+
+}
+/* nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+} */
+
+
+nav li{
+    display: inline-block;
+}
+
+nav a{
+    color: rgb(66, 65, 65);
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover{
+    color: rgba(0, 0, 0, 0.404);
+    transition: 0.3s;
+}
+
+section img {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+}
+
+.hero {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+
+    background-image: url("./images/fashionShow.gif");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero h1 {
+    font-family: 'New-Amsterdam', sans-serif;
+    font-weight: 800;
+    font-size: 1.9em;
+    animation: whiteGrayEffect 2s infinite alternate; 
+}
+
+@keyframes whiteGrayEffect {
+    0% { color: rgb(255, 255, 255); } 
+    50% { color: rgb(200, 200, 200); } 
+    100% { color: rgb(255, 255, 255); } 
+}
+
+.showroom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: white;
+    color: black;
+    height: 500px;
+}
+
+.showroom article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.showroom h2 {
+    font-family:'Courier New', Courier, monospace;
+}
+
+.showroom img {
+    width: 300px;
+    height: 350px;
+    cursor: pointer;
+}
+
+@keyframes changeImage {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.showroom article img:hover {
+    animation-timing-function: ease-in-out;
+}
+  .showroom article:nth-child(1) img:hover { 
+      content: url("/images/roupa1.webp"); 
+      animation: changeImage 1s;
+}
+  .showroom article:nth-child(2) img:hover {
+       content: url("/images/roupa3.webp"); 
+       animation: changeImage 1s;
+}
+  .showroom article:nth-child(3) img:hover {
+       content: url("/images/roupa2.webp"); 
+       animation: changeImage 1s;
+}
+
+footer {
+    width: 100%;
+    height: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+footer img{
+    padding-top: 25px;
+    padding-left: 15px;
+    max-height: 70px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-right: 1px solid white; 
+}
+
+footer p {
+    justify-self: end;  
+    padding-right: 15px; 
+    padding-top: 60px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width: 900px) {
+    header {
+        background-color: white;
+        height: 120px;
+        width: 900px; 
+    }
+}
+
