@@ -1,2 +1,2 @@
 # FrontEnd-Templates
-Frontend templates for studying, featuring HTML, CSS, JavaScript, and React. 🚀 Perfect for learning and experimenting with modern web development.
+Frontend templates for studying, featuring HTML, CSS, JavaScript, React and Angular. 🚀 Learning and experimenting with modern web development.
